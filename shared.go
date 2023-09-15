@@ -1,4 +1,4 @@
 package app
 
-const GreetingTaskQueue = "GREEETING_TASK_QUEUE"
+const GreetingTaskQueue = "GREETING_TASK_QUEUE"
 
