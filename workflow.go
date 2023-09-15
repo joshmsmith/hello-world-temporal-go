@@ -16,6 +16,8 @@ func GreetingWorkflow(ctx workflow.Context, name string) (string, error) {
     var result string
     err := workflow.ExecuteActivity(ctx, ComposeGreeting, name).Get(ctx, &result)
 
+    //err := workflow.ExecuteActivity(ctx, ComposeGreeting, "").Get(ctx, &result)
+
     return result, err
 }
 
